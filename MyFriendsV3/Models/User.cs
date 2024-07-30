@@ -14,6 +14,7 @@ namespace MyFriendsV3.Models
         public List<Picture>? UserPictures { get; set; }
         public byte[] ProfilePicture { get; set; }
         [NotMapped]
+        [Display(Name ="Set Profile Image")]
         public IFormFile? SetProfileImage 
         {
             get { return null; }
